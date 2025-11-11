@@ -1,60 +1,92 @@
-# 🌐 Projeto: Site com Paleta de Cores Harmoniosa (HTML + CSS)
+# 🌐 Prova 04 — Site com HTML e CSS
 
-## 📖 Descrição
+Este projeto foi desenvolvido como parte da **Prova 04**, com o objetivo de demonstrar a aplicação de conceitos fundamentais de **HTML5** e **CSS3** na criação de uma página web moderna, organizada e visualmente harmoniosa.  
+A proposta consiste em criar um **site com múltiplas seções e artigos**, aplicando uma **paleta de cores gerada por IA** e boas práticas de design responsivo.
 
-Este projeto foi desenvolvido como parte de uma **avaliação prática de HTML e CSS**, com o objetivo de aplicar os conceitos fundamentais de estruturação e estilização de páginas web.  
-A atividade propunha **utilizar o ChatGPT para gerar uma paleta de cores harmoniosa** e criar um site simples, contendo as principais seções de um layout moderno: **header**, **section**, **aside** e **footer**.
+---
 
-O site foi construído em **duas camadas**:
-- **HTML (index.html)** — responsável pela estrutura e semântica do conteúdo;
-- **CSS externo (style.css)** — responsável pela aparência visual, cores, espaçamentos e layout.
+## 🎯 Objetivos do Projeto
+
+- Utilizar o **HTML semântico** para estruturar o conteúdo (header, main, article, section, aside e footer).  
+- Aplicar **CSS moderno** para criar uma interface visual harmoniosa e responsiva.  
+- Demonstrar o uso de **scroll suave** e seções que ocupam **100% da altura da tela**.  
+- Criar **três artigos interativos** com botões e links estilizados.  
+- Implementar uma **paleta de cores profissional**, inspirada em tons escuros com destaque em verde vibrante.
+
+---
+
+## 🧩 Estrutura do Projeto
+
+📁 Prova04/
+├── index.html # Estrutura principal da página
+├── style.css # Folha de estilo externa com a paleta de cores
+└── README.md # Documentação do projeto
+
+yaml
+Copiar código
+
+---
+
+## 🧱 Estrutura HTML
+
+O arquivo `index.html` foi construído com seções organizadas:
+
+- **Header:** título do site e menu de navegação fixo.  
+- **Section (introdução):** apresentação do site e link para mais informações.  
+- **Section (artigos):** cards com resumos e links para três artigos.  
+- **Articles 1, 2 e 3:** conteúdo completo de cada tema (CSS, HTML e Modelo de Caixa).  
+- **Section (sobre):** descrição do propósito do projeto.  
+- **Aside:** links úteis para aprofundar o estudo.  
+- **Footer:** informações de contato e créditos.
+
+---
 
 ## 🎨 Paleta de Cores
 
-A paleta foi gerada por inteligência artificial, garantindo **harmonia visual e contraste adequado**:
+A paleta harmoniosa foi gerada com auxílio de IA, baseada em tons **escuros e contrastantes**, ideais para conforto visual e destaque dos elementos interativos.
 
-| Cor | Código | Uso |
-|------|--------|-----|
-| Azul escuro | `#2D3142` | Cabeçalho e rodapé |
-| Azul acinzentado | `#4F5D75` | Barra lateral e seções alternadas |
-| Laranja | `#EF8354` | Botões e elementos de destaque |
-| Cinza claro | `#F5F3F5` | Fundo principal |
-| Preto suave | `#333333` | Texto |
+| Função | Cor | Descrição |
+|--------|------|-----------|
+| Fundo principal | `#000000` | Fundo escuro, base da interface |
+| Secundário | `#181818` | Fundo alternativo para seções |
+| Acento | `#1DB954` | Verde vibrante para destaques e botões |
+| Texto principal | `#FFFFFF` | Contraste para leitura confortável |
+| Texto secundário | `#B3B3B3` | Suaviza elementos informativos |
 
-## 🧩 Estrutura do Site
+---
 
-O site é composto pelas seguintes seções:
+## ⚙️ Funcionalidades e Recursos
 
-- **Header:** contém o título do site e o menu de navegação.  
-- **Section "Introdução":** apresenta o objetivo do projeto.  
-- **Section "Artigos":** exibe três artigos principais, cada um ocupando **100% da altura da tela**, permitindo uma **rolagem vertical fluida**.  
-  - **Artigo 1:** Introdução ao CSS  
-  - **Artigo 2:** Estrutura HTML  
-  - **Artigo 3:** Modelo de Caixa (Box Model)  
-- **Aside:** contém links úteis relacionados a HTML e CSS.  
-- **Footer:** apresenta informações de contato e direitos autorais.
+- Navegação fluida com **scroll suave**.  
+- Seções de artigos com **altura total da tela (100vh)**.  
+- Cards e botões com **efeitos de transição**.  
+- Layout **responsivo** e adaptado a dispositivos móveis.  
+- Destaque visual com **gradientes e sombras sutis**.  
 
-## 💡 Recursos Utilizados
+---
 
-- **HTML5** para a estrutura semântica.  
-- **CSS3** para o design visual.  
-- **Paleta gerada por IA (ChatGPT)**.  
-- **Layout responsivo**, com cada artigo ocupando 100% da viewport (altura total da tela).
+## 💡 Tecnologias Utilizadas
 
-## 🚀 Objetivo da Atividade
+- **HTML5** — Estrutura semântica do conteúdo.  
+- **CSS3** — Estilização, layout e responsividade.  
+- **IA (ChatGPT)** — Geração da paleta de cores e base estrutural do projeto.
 
-- Compreender a diferença entre **elementos semânticos e não semânticos**.  
-- Aplicar conceitos do **Modelo de Caixa (Box Model)**.  
-- Utilizar **CSS externo** para organizar e manter o código limpo.  
-- Experimentar o uso de **IA na criação de estilos e paletas de cores**.  
+---
 
-## Conclusão
+## 🚀 Como Visualizar o Projeto
 
-O projeto demonstra a integração entre conhecimento técnico e criatividade, utilizando o ChatGPT como ferramenta auxiliar no processo de desenvolvimento web.
-Além de aplicar os fundamentos do HTML e CSS, a atividade reforça a importância da organização do código, design harmônico e acessibilidade visual.
+1. Faça o download ou clone este repositório:
+   ```bash
+   git clone https://github.com/SEU-USUARIO/Prova04.git
+Abra o arquivo index.html em seu navegador.
+
+Explore as seções rolando para baixo e interagindo com os artigos.
+
+🧠 Sobre o Projeto
+O site foi desenvolvido como uma demonstração prática de desenvolvimento front-end, unindo simplicidade estrutural e sofisticação visual.
+Cada seção foi projetada para ser acessível, intuitiva e visualmente equilibrada, evidenciando a importância da harmonia entre design e semântica no desenvolvimento web moderno.
 
 👨‍💻 Autor
-Nicolas Navarro
-Desenvolvido em 2025 como parte da disciplina de Desenvolvimento Web — 1º Ano do Ensino Médio.
-
-
+Nicolas Lameiras
+📧 Email: nicolaslameiras@gmail.com
+© 2025 — Todos os direitos reservados.
