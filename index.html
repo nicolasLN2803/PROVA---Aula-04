@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Artigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Prova 04</h1>
+        <nav>
+            <a href="#introducao">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="introducao">
+            <h2>Bem-vindo!</h2>
+            <p>Este site foi criado para demonstrar o uso de HTML e CSS com uma paleta de cores harmoniosa gerada por
+                IA.</p>
+            <a href="#sobre" class="btn">Saiba mais</a>
+        </section>
+
+        <section id="artigos">
+            <h2>Artigos Recentes</h2>
+
+            <article class="card">
+                <h3>Artigo 1 — Introdução ao CSS</h3>
+                <p>O CSS é uma linguagem de estilo utilizada para personalizar a aparência dos elementos HTML em uma
+                    página web.</p>
+                <a href="#artigo1">Leia mais</a>
+            </article>
+
+            <article class="card">
+                <h3>Artigo 2 — Estrutura HTML</h3>
+                <p>O HTML fornece a estrutura da página, enquanto o CSS define a aparência. Juntos, criam a base do
+                    desenvolvimento web.</p>
+                <a href="#artigo2">Leia mais</a>
+            </article>
+
+            <article class="card">
+                <h3>Artigo 3 — Modelo de Caixa</h3>
+                <p>O modelo de caixa (Box Model) descreve como o CSS calcula o tamanho e o espaçamento de cada elemento
+                    da página.</p>
+                <a href="#artigo3">Leia mais</a>
+            </article>
+        </section>
+
+       
+        <section id="artigo1" class="artigo">
+            <h2>Artigo 1 — Introdução ao CSS</h2>
+            <p>O CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo fundamental para
+                a web, cuja principal função é separar a estrutura do conteúdo (definida pelo HTML) de sua apresentação
+                visual. Enquanto o HTML constrói a base de uma página, o CSS atua como a camada de design, permitindo o
+                controle minucioso sobre cores, fontes, tamanhos, espaçamentos, posicionamento de elementos e a criação
+                de layouts complexos. <br><br>
+
+                Sua característica de "cascata" refere-se à forma como as regras de estilo são aplicadas, seguindo uma
+                hierarquia de prioridades que leva em conta a origem do estilo (autor, usuário ou navegador), a
+                especificidade do seletor e a ordem de declaração. Isso permite a criação de estilos consistentes,
+                fáceis de manter e modificar. Combinado com técnicas de Flexbox e CSS Grid, o CSS tornou-se uma
+                ferramenta poderosa para desenvolver designs responsivos que se adaptam perfeitamente a diferentes
+                tamanhos de tela e dispositivos.</p>
+            <button>Saiba mais</button>
+        </section>
+
+        <section id="artigo2" class="artigo">
+            <h2>Artigo 2 — Estrutura HTML</h2>
+            <p>O HTML (HyperText Markup Language ou Linguagem de Marcação de Hipertexto) é a espinha dorsal de qualquer
+                website. Mais do que uma linguagem de programação, é uma linguagem de marcação que utiliza uma estrutura
+                de tags (etiquetas) para organizar e dar significado ao conteúdo de uma página web. Cada tag tem uma
+                função específica, definindo a semântica e a hierarquia das informações.</p>
+            <button>Ler artigo completo</button>
+        </section>
+
+        <section id="artigo3" class="artigo">
+            <h2>Artigo 3 — Modelo de Caixa</h2>
+            <p>O Modelo de Caixa (Box Model) é um conceito fundamental do CSS que descreve a estrutura dimensional de
+                cada elemento HTML, tratando-o como uma caixa retangular composta por quatro camadas concêntricas. O
+                entendimento desse modelo é crucial para um controle preciso do layout e do espaçamento em um design.
+                <br><br>
+                As camadas que compõem o modelo de caixa são, de dentro para fora:<br><br>
+
+                <strong>Conteúdo (Content):</strong> A área interna onde o texto, imagens ou outros elementos são exibidos. Suas
+                dimensões são definidas pelas propriedades width (largura) e height (altura).<br><br>
+
+                <strong>Preenchimento (Padding):</strong> Um espaço transparente que envolve o conteúdo, criando uma área de respiro
+                entre o conteúdo e a borda. É controlado pela propriedade padding.<br><br>
+
+                <strong>Borda (Border):</strong> Uma linha que circula o padding e o conteúdo. Sua espessura, estilo (sólida, tracejada,
+                pontilhada) e cor podem ser personalizados com a propriedade border.<br><br>
+
+                <strong>Margem (Margin):</strong> O espaço mais externo, transparente, que separa o elemento de outros elementos ao seu
+                redor. É controlado pela propriedade margin.</p>
+            <button>Explorar mais</button>
+        </section>
+
+        <section id="sobre" class="artigo">
+            <h2>Sobre este Projeto</h2>
+            <p>Este projeto foi desenvolvido como uma demonstração prática de desenvolvimento web moderno, combinando HTML semântico, CSS avançado e uma estrutura limpa e profissional. O objetivo é criar uma experiência visual atraente e responsiva, mantendo a acessibilidade e a facilidade de uso em primeiro lugar.<br><br>
+
+            A paleta de cores foi cuidadosamente selecionada para criar um ambiente visual harmônico, usando tons escuros que reduzem o cansaço visual e um verde vibrante que destaca elementos importantes e cria pontos de interação intuitivos. Esta combinação é frequentemente encontrada em aplicações modernas e profissionais, demonstrando como cores bem escolhidas podem melhorar significativamente a experiência do usuário.<br><br>
+
+            Cada seção do site foi estruturada de forma a oferecer conteúdo bem organizado e visualmente agradável. Os artigos são apresentados em cards interativos que oferecem um preview do conteúdo, permitindo que o usuário explore diferentes tópicos relacionados ao desenvolvimento web. A navegação foi pensada para ser intuitiva, com links suavemente animados e transições fluidas que tornam a experiência mais envolvente e profissional.</p>
+        </section>
+       
+        <aside>
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="#">Documentação do HTML</a></li>
+                <li><a href="#">Documentação do CSS</a></li>
+                <li><a href="#">Guia de Boas Práticas</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="contato">
+        <p>&copy; 2025 - Criado por Nicolas Lameiras</p>
+        <p>Email: nicolaslameiras@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
