@@ -1,0 +1,402 @@
+:root {
+  --primary: #121212;
+  --secondary: #181818;
+  --accent: #1DB954;
+  --background: #000000;
+  --text: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --card-hover: #252525;
+  --transition: all 0.3s ease;
+}
+
+/* Configuração geral */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: rgba(18, 18, 18, 0.95);
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent);
+  transition: var(--transition);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Introdução */
+#introducao {
+  text-align: center;
+  background: linear-gradient(145deg, var(--primary), var(--secondary));
+  margin: 40px auto;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#introducao h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+#introducao p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Artigos e Cards */
+#artigos {
+  margin: 60px 0;
+}
+
+#artigos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--secondary);
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 8px;
+  transition: var(--transition);
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.card:hover {
+  background-color: var(--card-hover);
+  transform: translateX(10px);
+  border-left-color: var(--accent);
+}
+
+.card h3 {
+  color: var(--text);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.card a:hover {
+  color: #1ed760;
+}
+
+.card a::after {
+  content: '→';
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.card a:hover::after {
+  transform: translateX(4px);
+}
+
+/* Seções de artigo em tela cheia */
+.artigo {
+  min-height: 100vh;
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.artigo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--text);
+}
+
+.artigo p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* Cores alternadas para artigos */
+#sobre {
+  background: linear-gradient(135deg, var(--accent) 0%, #1aa946 100%);
+}
+
+#sobre h2 {
+  color: black;
+}
+
+#sobre p {
+  color: black;
+}
+
+#sobre {
+  border-radius: 24px;
+  margin: 60px auto;
+  max-width: 1000px;
+}
+
+#artigo1 {
+  background: linear-gradient(135deg, var(--primary) 0%, #2d1b69 100%);
+}
+
+#artigo2 {
+  background: linear-gradient(135deg, #1e3264 0%, var(--secondary) 100%);
+}
+
+#artigo2 p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#artigo3 {
+  background: linear-gradient(135deg, #8d67ab 0%, var(--accent) 100%);
+}
+
+#artigo3 p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Aside */
+aside {
+  background: linear-gradient(145deg, var(--primary), var(--secondary));
+  color: var(--text);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 60px auto;
+  max-width: 400px;
+  border-left: 4px solid var(--accent);
+}
+
+aside h3 {
+  color: var(--text);
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+aside a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  display: block;
+}
+
+aside a:hover {
+  color: #1ed760;
+  transform: translateX(5px);
+}
+
+/* Botões */
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(29, 185, 84, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Links estilizados como botão */
+.btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(29, 185, 84, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin: 8px 0;
+  color: var(--text-secondary);
+}
+
+/* Utilitários */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+  
+  header {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  
+  #introducao {
+    padding: 30px 20px;
+    margin: 20px auto;
+  }
+  
+  #introducao h2 {
+    font-size: 1.8rem;
+  }
+  
+  .artigo {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .artigo h2 {
+    font-size: 2rem;
+  }
+  
+  .card {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .artigo {
+    padding: 40px 15px;
+  }
+  
+  .artigo h2 {
+    font-size: 1.7rem;
+  }
+}
